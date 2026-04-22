@@ -76,7 +76,3 @@ This project currently has **no license specified**. Please contact me before re
 ## 👤 Author
 
 **Deviyansh**
-
-This is fully formatted for GitHub — once you add it as `README.md`, GitHub will render it with headings, tables, and code blocks.  
-
-Would you like me to also add **badges** (like Python version, repo size, last commit) at the top for a more polished look?
