@@ -1,0 +1,19 @@
+# Core dependencies
+numpy
+pandas
+
+# Image processing
+Pillow
+
+# Video and multimedia handling
+opencv-python
+moviepy
+
+# Compression and archive utilities
+bz2file
+
+# Web framework (if app.py uses a server or UI)
+flask
+
+# General utilities
+requests
