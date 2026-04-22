@@ -2,10 +2,8 @@ import streamlit as st
 import requests
 import base64
 
-# 1. Page Configuration
 st.set_page_config(page_title="Blostem | Vernacular Advisor", page_icon="🎯", layout="wide")
 
-# 2. Base64 Encoding for Background
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
@@ -14,7 +12,6 @@ def get_base64(bin_file):
 try:
     bin_str = get_base64('BG.png')
     
-    # 3. ADVANCED STYLING - Cohesive Midnight Theme
     st.markdown(f'''
         <style>
         /* MAIN APP - Dark & Cinematic */
@@ -120,7 +117,6 @@ try:
 except Exception:
     st.sidebar.warning("Note: BG.png not detected. Applying High-Contrast Dark Theme.")
 
-# 4. SIDEBAR - Cohesive Control Panel
 with st.sidebar:
     st.markdown("<div style='text-align: center; padding-top: 20px;'>", unsafe_allow_html=True)
     st.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=100)
@@ -142,11 +138,10 @@ with st.sidebar:
     st.divider()
     
     st.markdown("<div style='opacity: 0.8;'>", unsafe_allow_html=True)
-    st.info("**Blostem Solo Builder**")
-    st.caption("VIT Bhopal University | 2026")
+    st.info("**Solo Builder**")
+    st.caption(" ")
     st.markdown("</div>", unsafe_allow_html=True)
 
-# 5. MAIN APP INTERFACE
 st.markdown("<h1 style='text-align: center; color: white;'>🏦 Vernacular FD Advisor</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-size: 1.25rem; color: #cbd5e0; font-weight: 400;'>Bridging Bharat’s Financial Literacy Gap</p>", unsafe_allow_html=True)
 
